@@ -112,7 +112,7 @@ if os.path.isdir(ruta_carpeta):
             # Variable de control para verificar la existencia de vehículo/s
             is_car = False
             for label in response['Labels']:
-                # Filtro: Nombre en objetivos Y confianza estrictamente mayor a 90.0
+                # Filtro -> Nombre en objetivos Y confianza estrictamente mayor a 90.0
                 if label['Name'].lower() in etiquetas_vehiculo and label['Confidence'] > 90.0:
                     is_car = True
                     print(f"\tEtiqueta: {label['Name']}, Confianza: {label['Confidence']}")
