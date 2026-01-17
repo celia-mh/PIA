@@ -34,7 +34,7 @@ rekognition_client = boto3.client('rekognition', region_name=REGION)
 
 # Leemos la imagen desde el archivo en formato binario
 
-IMAGE_FILE_PATH = "C:\\Users\\usuario\\Downloads\\cara1descarga.jpg"
+IMAGE_FILE_PATH = "C:\\Users\\Celia\\Downloads\\Tarea_2\\Imágenes_probadas\\cara1descarga.jpg"
 with open(IMAGE_FILE_PATH, 'rb') as image_file:
     image_bytes = image_file.read()
 
